@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz JS</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="ca">
+    <div class="card">
+        <h5 class="card-header" id="qNo">Question No</h5>
+        <div class="card-body">
+          <h5 class="card-title" id="q">Question</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item option" onclick="select(this)"  id="o1" style="cursor: pointer;">Option 1</li>
+            <li class="list-group-item option"onclick="select(this)" id="o2" style="cursor: pointer;">Option 2</li>
+            <li class="list-group-item option"onclick="select(this)"  id="o3" style="cursor: pointer;">Option 3</li>
+            <li class="list-group-item option"onclick="select(this)" id="o4" style="cursor: pointer;">Option 4</li>
+          </ul>
+        <p></p>
+         
+        </div>
+        <div class="card-footer text-right">
+            <a href="#" class="btn btn-primary "  id="next" onclick="next()">Next</a>
+            <a href="#" class="btn btn-primary "  id="finish" onclick="finish()">Finish</a>
+          </div>
+      </div>
+    </div>
+
+    <div class="card border-light mb-3 text-center " id="scoreCard">
+        <div class="card-header"><h2>Result</h2></div>
+        <div class="card-body">
+          <h3 class="card-title">SCORE</h3>
+          <h1 class="card-title" id='score'>0</h1>
+          </div>
+          <div class="card-footer ">
+            <a href="#" class="btn btn-primary "  id="end" onclick="end()">End</a>
+            
+          </div>
+    </div>
+    <script src="app.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
